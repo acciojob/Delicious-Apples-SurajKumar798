@@ -1,1 +1,129 @@
-/* your code here */
+body{
+	background-color:#62d262;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+.product{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	flex-wrap:wrap;
+	width:100%;
+	padding:20px;
+	position:relative;
+}
+.product__photo {
+	background:#fff;
+	border-radius:5px;
+	position:relative;
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+	z-index:2;
+	top:30px;
+	right:90px;
+}
+.photo-container{
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	position:relative;
+}
+.photo-main{
+	background-color:#9edd7b;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);	
+	width:30vw;
+}
+.photo-main img{
+	width:30vw;
+	margin-top:15px;
+	margin-left:-27px;
+}
+.controls{
+	display:flex;
+	justify-content:space-between;
+	position: absolute;
+	top:10px;
+	left:0;
+	right:0;
+	padding:0 10px;
+	color:white;
+}
+.photo-album img{
+	width:30px;
+	height: 30px;
+	object-fit:cover;
+	border-radius:10px;
+}
+.photo-album ul{
+	display:flex;
+	justify-content:center;
+	gap:10px;
+	list-style:none;
+	padding:0;
+	margin:10px 0;
+}
+.photo-album ul li{
+	border:1px solid lightgreen;
+	border-radius:1px;
+}
+.product__info{
+	background-color:white;
+	position:absolute;
+    left:25%;
+	top:10%;
+	z-index:1;
+	font-size:10px;
+	width:60vw;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	margin-left:70px;
+}
+.price{
+	font-size:20px;
+	font-weight:bold;
+	color:red;
+	margin:10px 0;
+}
+.variant{
+	display:flex;
+	justify-content:center;
+	flex-direction:column;
+	gap:10px;
+}
+.variant h3{
+	color: #888282;
+	font-size:15px;
+}
+.variant ul{
+	display:flex;
+	object-fit:cover;
+	gap:5px;
+}
+.variant li{
+	list-style:none;
+}
+.variant img{
+	width:30px;
+	height: 30px;
+}
+.description{
+	padding:10px;
+}
+.description h3{
+	text-align:center;
+	color:#888282;
+	font-size:15px;
+}
+.add-to-cart{
+	display:block;
+	background-color:red;
+	color:white;
+	padding:5px;
+	font-weight:bold;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);	
+	border:none;
+	margin-left:50px;
+}
+
